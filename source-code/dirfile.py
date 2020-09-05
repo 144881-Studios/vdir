@@ -30,7 +30,7 @@ class vdir(object) :
         except KeyError :
             predir[name] = {}
         else :
-            raise FileAlreadyHaveError
+            raise FileAlreadyExistError
         try :
             placedir[-1]
         except IndexError :
